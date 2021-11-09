@@ -1,0 +1,80 @@
+@import "global";
+@mixin tablet{
+    @media screen and (min-device-width:768px) and (max-device-width:1024px) {
+       @content; 
+    }
+}
+
+@mixin mobile {
+    @media screen and (min-device-width:320px) and (max-device-width:480px) {
+       @content; 
+    }
+}
+@mixin desktop {
+  @media screen and (min-device-width:1224px) and (max-device-width:1824px) {
+     @content; 
+  }
+}
+
+@mixin  link($color) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;  
+  color:$color;
+  width: 60%;
+  height: 90%;
+  
+}
+
+@mixin cards($color1,$color2) {
+  transition: all 0.3s cubic-bezier(1, 0, 0, 1);
+  width: 100%;
+  height: 100%;
+  
+  .st0{
+    fill:$color2;
+  }
+  .st2{
+    fill:$color1;
+  }
+
+  &:hover{
+      transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      transform: scale(1.01,1.01);
+      .st0{
+          fill:$color1;
+      }
+      .st2{
+          fill: $color2;
+      }
+      .st5{
+          transition: all 0.3s  cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          font-size: 65px;
+      }
+      .st3{
+          fill:$white;
+      }
+      .st1{
+          transition: all 0.3s  cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          fill:$gray;
+      }
+      
+  }
+}
+
+@mixin card-link {
+  .link{
+    @extend %display-flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 1rem;
+     
+       
+       h2{
+           position: absolute;
+           
+       }
+       
+   }
+}

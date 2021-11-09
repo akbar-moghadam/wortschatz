@@ -1,0 +1,20 @@
+
+%display-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%card{
+    @extend %display-flex;
+    height: 90%;
+    width: 90%;
+    padding: 1rem 0;
+}
+
+$blue:#caf0f8;
+$sormei:#88909b;
+$sabz:#264653;
+$zard:#fca311;
+$white:#fff;
+$gray:#e9ecef;
