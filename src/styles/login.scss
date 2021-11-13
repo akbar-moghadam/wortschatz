@@ -18,16 +18,17 @@
 .login-item{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     width: 60%;
     height: 80%;
-    transform-style: preserve-3d;
-    box-shadow: 1px 1px 5px 10px rgba(255,255,255,0.3);
+    box-shadow: 1px 2px 5px 10px rgba(255, 255, 255, 0.24);
     border-radius: 10px;
-    filter: blur(10px);
+    padding: 1rem 10px;
+
+    h2{
+        margin: 2rem 0;
+    }
+    
 }
-.div{
-    position: absolute;
-    left:0;
-    top:0;
-}
+
