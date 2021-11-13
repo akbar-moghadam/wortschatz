@@ -9,6 +9,7 @@ import Home from '../src/components/Home';
 import Notfound from '../src/components/Notfound'
 import ShowDetailsProvider from '../src/contexts/ShowContext'
 import Footer from "../src/components/Footer";
+import Login from './components/Login';
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
         <Route path="/a1/" ><A1 /></Route>
         <Route path="/a2/" ><A2 /></Route>
         <Route path="/b1/" ><B1 /></Route>
-        
+        <Route path="/login/"><Login/></Route>
         </ShowDetailsProvider>
         <Route path="*"><Notfound/></Route>
         

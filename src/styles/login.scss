@@ -1,0 +1,33 @@
+@import "global";
+@import "mixin";
+
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $sormei;
+    z-index: 3;
+   
+
+}
+.login-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+    transform-style: preserve-3d;
+    box-shadow: 1px 1px 5px 10px rgba(255,255,255,0.3);
+    border-radius: 10px;
+    filter: blur(10px);
+}
+.div{
+    position: absolute;
+    left:0;
+    top:0;
+}
