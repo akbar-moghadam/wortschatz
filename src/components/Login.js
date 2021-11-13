@@ -6,11 +6,13 @@ const Login = () => {
             <div className="login-item">
                 <h2>Login</h2>
                 <div className="login-form">
-                <form >
-                    <label htmlFor="user">
+                <form  className="form">
+                    <label htmlFor="user" className="login-label">
                     <input type="text" placeholder="Username or Email" name="user"/>
                     </label>
-                    
+                    <label htmlFor="pass" className="login-label">
+                    <input type="text" placeholder="Password" name="pass"/>
+                    </label>
 
                 </form>
             </div>
