@@ -45,7 +45,7 @@ const Nav = () => {
             <Link to={'/b1/'} onClick={refreshPage} className="link">
               <span className="home">DEUTSCH B1</span>
             </Link>
-            <Link to={'/'}  className="link">
+            <Link to={'/login/'}  className="link">
               <span className="home">sign in</span>
             </Link>
             <span></span>
