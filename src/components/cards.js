@@ -15,10 +15,10 @@ useEffect(() => {
 
       <div className="card1" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
         <Link to="/a1/" className="link">
-          <Svg1 className="svg1" >
+          <Svg1 className="svg1" />
 
           
-          </Svg1>
+          
         </Link>
       </div>
 

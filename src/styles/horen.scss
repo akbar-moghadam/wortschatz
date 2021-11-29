@@ -1,0 +1,139 @@
+@import "global";
+@import "mixin";
+
+.horen-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    min-height: 15rem;
+    place-content: center;
+    place-items: center;
+    padding: 15px;
+    background-color: $gray;
+}
+
+.horen-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    h2{
+        margin: 10px 5px;
+        padding: 10px;
+    }
+
+    .horen-link{
+        border: none;
+        border-radius: 10px;
+        padding: 15px;
+        background-color: $zard;
+        color: $gray;
+        margin: 15px 10px;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+}
+.horen-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.head{
+    height: 80%;
+}
+
+//horenItem
+
+.horenitem-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 45rem;
+    padding-top: 12rem;
+    position: relative;
+    background-color: $zard;
+    
+}
+
+.horenitem-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    padding: 10px;
+    position: relative;
+
+    &::after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 90%;
+        height: 2px;
+        background-color: $gray;
+    }
+}
+.horenitem-select{
+    display: flex;
+    align-items: center;
+    align-items: center;
+
+    .labelitem{
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px 10px;
+    }
+    .selectitem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 300;
+        padding: 5px 15px;
+
+        option{
+            padding: 0 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+
+.horenitem-body{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    place-content: center;
+    flex-direction: column;
+    width: 40%;
+    padding: 15px 5px;
+    margin-right: 5rem;
+
+
+    .Horen{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        place-items: center;
+        place-content:center;
+        margin: 5px;
+        width: 100%;
+        padding: 5px;
+        background-color: $blue;
+        border-radius: 20px;
+
+        h5{
+            margin: 5px 10px;
+            padding: 5px 15px;
+            text-align: center;
+
+        }
+    }
+}

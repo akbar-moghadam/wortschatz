@@ -3,6 +3,7 @@ import Header from './header';
 import Line from './line';
 import '../styles/App.scss';
 import Cards from "./cards";
+import Horen from "./horen";
 
 
 function Home() {
@@ -17,6 +18,9 @@ function Home() {
         </section>
         <section className="cards">
           <Cards />
+        </section>
+        <section className="horen">
+          <Horen/>
         </section>
 
       </main>
