@@ -56,7 +56,7 @@ function TestItem(props) {
     return (
         <div className="testitem-container">
           {k.item.map((item,index) => (
-            <div key={index} className="testitem" id={'item'+index} ><button  value={item} onClick={(e) => checkAntwort(e,index)} >{item}</button></div>
+            <div key={index} className="testitem" id={'item'+index}><button  value={item} onClick={(e) => checkAntwort(e,index)} >{item}</button></div>
 
           ))}  
           
